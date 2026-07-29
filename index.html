@@ -11,93 +11,151 @@
     structure for that content type-->
 
     <!--main header for the website-->
-    <header class="main-header">
-        <a href="#" class="logo-link">
-            <img src="images/logo.png" alt="Company Logo">
+   <header class="site-header">
+    <div class="header-container">
+        
+        <!-- Logo -->
+        <a href="#" class="brand-logo">
+            <img src="images/logo.png" alt="Company Logo" class="logo-image">
         </a>
-        <button class="menu-toggle" aria-label="Toggle Navigation Menu">Menu</button>
-    </header>
+
+        <!-- Main Navigation Links -->
+        <nav class="main-nav" aria-label="Main Navigation">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link nav-link-active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Team</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Search Form -->
+        <form action="#" method="get" class="search-form" role="search">
+            <label for="site-search" class="visually-hidden">Search</label>
+            <input type="search" id="site-search" name="q" placeholder="Search" class="search-input">
+            <button type="submit" class="search-submit" aria-label="Search">
+                <span class="search-icon" aria-hidden="true">&#x1F50D;</span>
+            </button>
+        </form>
+
+    </div>
+</header>
 
     <!--main content section-->
     <main>
 
-        <!-- Hero Section -->
+        <!--hero section aka main title area-->
         <section class="hero-section">
             <h1 class="hero-title">HIGH-IMPACT MEDIA PRODUCTION</h1>
             <p class="hero-subtitle">Bringing your vision to life with professional video, web, print, and digital solutions.</p>
+            <img src="images/main-banner.jpg" alt="Main banner image" class="main-banner">
+        </section>
+
+        <section class="about-section">
+            <h1 class="about-title">About Us</h1>
+            <p class="about-subtitle">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
         </section>
 
         <!--services section-->
         <section class="services-section">
+
+            <!--service 1 digital transformation-->
+            <article class="service-card1">
+                <img src="images/digital.jpg" alt="charts on a screen" class="service-image1">
+                <div class="service-content1">
+                    <h2 class="service-title1">Digital Marketing</h2>
+                    <p class="service-description1">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <a href="#" class="btn-service1">Learn More</a>
+                </div>
+            </article>
+
+            <!--service 2 marketing-->
+            <article class="service-card2">
+                <img src="images/marketing.jpg" alt="A notebook" class="service-image2">
+                <div class="service-content2">
+                    <h2 class="service-title2">Marketing</h2>
+                    <p class="service-description2">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <a href="#" class="btn-service2">Learn More</a>
+                </div>
+            </article>
+
+            <!--service 3 video production and I also added the image for that here-->
+            <article class="service-card3">
+                <img src="images/video.jpg" alt="camera equipment" class="service-image3">
+                <div class="service-content3">
+                    <h2 class="service-title3">Video Production</h2>
+                    <p class="service-description3">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <a href="#" class="btn-service3">Learn More</a>
+                </div>
+            </article>
+
+            <!--service 4 web design and development. again I added the image for that here as well-->
+            <article class="service-card4">
+                <img src="images/web.jpg" alt="mobile phone" class="service-image4">
+                <div class="service-content4">
+                    <h2 class="service-title4">Web Development</h2>
+                    <p class="service-description4">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <a href="#" class="btn-service4">Learn More</a>
+                </div>
+            </article>
+
+            <!--service 5 print. added image here as well-->
+            <article class="service-card5">
+                <img src="images/print.jpg" alt="newspaper boxes" class="service-image5">
+                <div class="service-content5">
+                    <h2 class="service-title5">Print</h2>
+                    <p class="service-description5">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                    <a href="#" class="btn-service5">Learn More</a>
+                </div>
+            </article>
             
-            <!--service 1 "video production"-->
-            <article class="service-card">
-                <img src="images/video.jpg" alt="Professional video camera equipment set up on location" class="service-image">
-                <div class="service-content">
-                    <h2 class="service-title">Video Production</h2>
-                    <p class="service-description">From concepts to final edit, we produce stunning promotional videos, commercial ads, and event coverage tailored to your brand.</p>
-                    <a href="#" class="btn-service">Learn More</a>
-                </div>
-            </article>
-
-            <!-- Service 2: Web Design & Development -->
-            <article class="service-card">
-                <img src="images/web.jpg" alt="Web developer coding a modern web application on a laptop" class="service-image">
-                <div class="service-content">
-                    <h2 class="service-title">Web Design &amp; Development</h2>
-                    <p class="service-description">We build responsive, fast, and user-friendly websites that look great on any device and turn visitors into customers.</p>
-                    <a href="#" class="btn-service">Learn More</a>
-                </div>
-            </article>
-
-            <!-- Service 3: Print Media -->
-            <article class="service-card">
-                <img src="images/print.jpg" alt="Selection of high-quality printed branding materials and business cards" class="service-image">
-                <div class="service-content">
-                    <h2 class="service-title">Print Media</h2>
-                    <p class="service-description">Brochures, posters, business cards, and banners designed to make a memorable physical impact for your business.</p>
-                    <a href="#" class="btn-service">Learn More</a>
-                </div>
-            </article>
-
-            <!-- Service 4: Digital Marketing -->
-            <article class="service-card">
-                <img src="images/digital.jpg" alt="Digital marketing strategy analytics and charts on a screen" class="service-image">
-                <div class="service-content">
-                    <h2 class="service-title">Digital Marketing</h2>
-                    <p class="service-description">Data-driven strategies including SEO, social media management, and online advertising to grow your audience online.</p>
-                    <a href="#" class="btn-service">Learn More</a>
-                </div>
-            </article>
-
         </section>
-        <!--testimonials section-->
-        <section class="testimonials-section">
-            <h2 class="section-title">WHAT OUR CLIENTS SAY</h2>
-            
-            <div class="testimonial-container">
-                <!--John Doe testimonial-->
-                <blockquote class="testimonial-card">
-                    <img src="images/john.jpg" alt="Portrait of John Doe" class="testimonial-avatar">
-                    <p class="testimonial-text">"Working with this team transformed our marketing! The video they produced drove a 40% increase in client inquiries."</p>
-                    <cite class="testimonial-author">John Doe <span class="author-title">Marketing Director, Acme Corp</span></cite>
-                </blockquote>
+        <section class="team-section">
+    <h2 class="section-title">Our Team</h2>
 
-                <!--Bob Smith testimonial-->
-                <blockquote class="testimonial-card">
-                    <img src="images/bob.jpg" alt="Portrait of Bob Smith" class="testimonial-avatar">
-                    <p class="testimonial-text">"Our new website is fast, modern, and easy for clients to navigate. Highly recommend their web development services!"</p>
-                    <cite class="testimonial-author">Bob Smith <span class="author-title">CEO, TechStart Inc</span></cite>
-                </blockquote>
+    <table class="team-table">
+        <tbody class="table-body">
+            <!-- Row 1: John Doe -->
+            <tr class="table-row">
+                <td class="table-cell cell-media">
+                    <img src="images/john.jpg" alt="John Doe - CEO and Co-owner" class="member-photo">
+                </td>
+                <td class="table-cell cell-info">
+                    <h3 class="member-name">John Doe</h3>
+                    <p class="member-role">CEO and Co-owner</p>
+                    <p class="member-bio">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
+                    </p>
+                </td>
+            </tr>
 
-                <!--Vision Staff testimonial-->
-                <blockquote class="testimonial-card">
-                    <img src="images/vision.jpg" alt="Portrait of Vision Staff" class="testimonial-avatar">
-                    <p class="testimonial-text">"The print materials they designed for our annual conference were top-tier and delivered well before our deadline."</p>
-                    <cite class="testimonial-author">Vision Staff <span class="author-title">Event Coordinator, Global Events</span></cite>
-                </blockquote>
-            </div>
-        </section>
+            <!-- Row 2: Bob Rite -->
+            <tr class="table-row">
+                <td class="table-cell cell-info">
+                    <h3 class="member-name">Bob Rite</h3>
+                    <p class="member-role">CFO and Co-owner</p>
+                    <p class="member-bio">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet, aspernatur ratione sed cum ad officiis sint cumque fugiat similique. Earum laudantium deleniti possimus? Voluptatem architecto repellendus harum sit voluptatum tempora.
+                    </p>
+                </td>
+                <td class="table-cell cell-media">
+                    <img src="images/bob.jpg" alt="Bob Rite - CFO and Co-owner" class="member-photo">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
         <section class="contact-section">
             <h1 class="contact-title">Contact Us</h1>
